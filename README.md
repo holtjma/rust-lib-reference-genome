@@ -1,3 +1,5 @@
+[![Build status](https://github.com/holtjma/rust-lib-reference-genome/actions/workflows/test-ci.yml/badge.svg)](https://github.com/holtjma/rust-lib-reference-genome/actions)
+
 # Reference genome library for Rust
 This is a library that will load a reference genome into memory for quick lookups.
 This is largely an in-memory wrapper for a FASTA file.
