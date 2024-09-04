@@ -1,4 +1,4 @@
-name: test suite
+name: Continuous integration
 on: [push, pull_request]
 
 jobs:
@@ -8,4 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy
       - run: cargo test --all-features
+      - run: cargo clippy -- -D warnings
