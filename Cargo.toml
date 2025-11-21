@@ -1,7 +1,13 @@
 [package]
 name = "rust-lib-reference-genome"
-version = "0.2.0"
+version = "0.2.1"
+authors = ["holtjma <mholt@pacificbiosciences.com>"]
 edition = "2021"
+license = "BSD-3-Clause"
+description = "Reference genome library for Rust"
+homepage = "https://github.com/holtjma/rust-lib-reference-genome"
+repository = "https://github.com/holtjma/rust-lib-reference-genome"
+readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
