@@ -75,7 +75,7 @@ jobs:
     with:
       release_name: 'rust-lib-reference-genome'
       tag: ${{ needs.check-new-tag.outputs.tag }}
-      rust_version: 1.88.0
+      rust_version: 1.98.1
       test_docs: true
 
   publish-to-crates-io:
@@ -84,7 +84,7 @@ jobs:
     if: needs.check-new-tag.outputs.release_exists == 'false'
     runs-on: ubuntu-latest
     container:
-      image: rust:1.88.0
+      image: rust:1.98.1
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
